@@ -1,0 +1,15 @@
+[project]
+name = "ringr-technical-test"
+version = "0.1.0"
+description = "Conversational agents with structured turn lifecycle and simulated API integrations"
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
